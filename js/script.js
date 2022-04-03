@@ -71,15 +71,17 @@ timerBtn.addEventListener('click',function(){
 })
 function sekundomer(){ 
     if(sanoq==1){
-        timerSec.innerHTML=sekund
         sekund++
-        if(sekund==59){
+        timerSec.innerHTML=sekund
+        
+        if(sekund==60){
             sekund=0
             minut++
             timerMin.innerHTML=minut
-            if(minut==59){
+            if(minut==60){
                 soat++
                 timerHour.innerHTML=soat
+                minut=0
                 if(soat==24){
                     soat=0
                     timerHour.innerHTML=soat 
